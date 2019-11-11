@@ -1,0 +1,25 @@
+server:
+  port: 8181
+
+spring:
+  rabbitmq:
+    host: 134.209.195.231
+    queueName: stukzin.queue
+    exchangeName: stukzin-exchange
+    routingKey: stukzin.routingkey
+    cron:
+      visitor: "0 0/5 * * * ?"
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    url: jdbc:mysql://178.128.255.183:80/db_base_six_four?useSSL=false&serverTimezone=CAT
+    username: root
+    password: 211021555
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 3000
+      maximum-pool-size: 5
