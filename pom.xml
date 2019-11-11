@@ -91,7 +91,6 @@
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.20.0</version>
-
                 <configuration>
                     <verbose>true</verbose>
                     <images>
@@ -116,6 +115,7 @@
                     </images>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
