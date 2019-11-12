@@ -8,7 +8,7 @@ spring:
     exchangeName: stukzin-exchange
     routingKey: stukzin.routingkey
     cron:
-      visitor: "0 0/5 * * * ?"
+      visitor: "0 0/15 * * * ?"
   jpa:
     show-sql: true
     hibernate:
